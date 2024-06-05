@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="../css/home.css"> <!-- Link to external stylesheet -->
+    <title>About-us page</title>
+</head> <!-- Internal CSS styles -->
+<style>
+  body {
+    background-color: #8AA1B1;
+  }
+  *{
+    margin:0px;
+    padding:0px;
+    
+}
+  nav {
+      width: 100%;
+      height:65px;
+      line-height:-100px;
+      padding:0px 100px;
+      position: fixed;
+      border-radius: 5px;
+      background-color:#000000;
+      margin-top: -119px;
+   }
+   
+  
+   nav .banner p{
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      font-weight: bold;
+      color:white;
+   }
+   
+  
+      nav li a{
+          font-size: 15px;
+          text-transform: uppercase;
+          padding:0px 25px;
+          color: white;
+          text-decoration: none;
+   }
+   nav ul{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:65px;
+    line-height:65px;
+    padding:0px 100px;
+    margin-top: -4px ;
+    letter-spacing: 1px;
+    font-size: 10px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    background: rgba(160, 138, 136, 0.4);
+   }
+   li a:hover {
+     text-shadow: 0px 0px 9px rgb(235, 230, 230);
+     transition: all 0.2s ease 0s;
+     }
+   
+   nav li{
+      display: inline-block;
+      padding:0px 30px;
+  
+   }
+  .topsection {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px ;
+    margin-top: 120px;
+ }
+ .topsection p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ }
+ .topcontent{
+    background-color: #ECECEC;
+  border: 2px solid #FFD700;
+  border-radius: 20px;
+    display: flex;
+    margin-top: 55px;
+    margin-left: 200px;
+    margin-right: 200px;
+ }
+ .topcontent img{
+   padding:25px;
+   width: 350px;
+   height: 350px;
+ }
+ .toptext {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 18px;
+    padding:30px;
+ }
+  .mid {
+  display: flex;
+  padding: 35px;
+  margin: 30px;
+  
+  }
+  .mid h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+  }
+  .mid p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .mid ul{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .more {
+    background-color: #d38e8e;
+    width:350px;
+    height:300px;
+    margin: 25px;
+  padding:25px;
+  
+   
+  }
+  .more1 {
+    background-color: #c14141;
+    width:350px;
+    height:300px;
+  padding: 25px;
+  margin: 25px;
+  }
+  .more2 {
+    background-color: #b53c3c;
+    width:350px;
+    height:300px;
+    padding: 25px;
+    margin: 25px;
+  }
+  .heading2 h1{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+     font-size: 40px;
+     }
+  .Maincontainer {
+    display: flex;
+    background-color: aliceblue;
+  }
+  .team-img {
+  width: 250px;
+  height:280px;
+  }
+  .container {
+  width: 300px;
+  height:450px;
+  margin: 25px;
+  padding: 20px;
+  }
+  .container h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  text-align: center;
+  }
+  .container h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  }
+  .container p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 300;
+  text-align: center;
+  }
+  footer {
+    width: 100%;
+    height: 28%;
+    background-color:#8AA1B1;
+    color: #fff;
+    padding: 30px 60px 30px 160px;
+    border-top-left-radius: 120px;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 80px;
+    }
+    .row1 {
+      font-size: 20px;
+    width: 85%;
+    margin-top: 10px;
+    display: flex;
+      align-content: center;
+    }
+    .col1 {
+    flex: 25%;
+    padding: 10px;
+      cursor: pointer;
+  
+    }
+    .col1 h3{
+    color: white;
+    }
+  
+    .col1 p{
+    padding-top: 10px;
+    }
+  
+   .col1 .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 1px;
+  }
+   
+    .col1 li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    }  
+</style>
+<body>
+<header>  <!-- Header section containing navigation and buttons -->
+    <nav> <!-- Navigation bar -->
+    <div class="banner">
+       <p>  Ink Panda </p>
+    </div>
+       <ul> <!-- Navigation links -->
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="About-us.html">About us</a></li>
+
+       </ul>
+    </nav>
+        <div class="contents">
+            <div> <!--creating buttons for login and Sign up-->
+              <button type="button"><a href="form.html">Sign-up</a></button>
+              <button type="button"><a href="form.html">Login</a></button>
+    </div>
+</header> <!-- Top section content -->
+    <div class="topsection">
+        <h1>About us</h1>
+        <p>"Print it, live it, share it."</p>
+        <div class="topcontent">
+        <img src="../images/lo.jpg" alt="logo.jpg">
+        <div class="toptext">
+            <h3>About our Company</h3><br>
+            <p>Ink Panda is an business for retailing of differrent catagories, class and model of quality printers to broden its product across the world and shift into new e-commerce printer market across Nepal.The main focus of Ink Panda is to shift the printer buyer from traditional market suffering from their inconvinence & discomfort to online market by building foundation of trust and comfort.</p>
+        </div>
+    </div>
+   </div> <!-- Mid s content -->
+   <div class="mid">
+   <div class="more">
+   <h3>Our Vision</h3><br>
+   <p>To be the most recogniectionzed and renowned online market for printer and e-commerce platform across Nepal.</p>
+</div>
+    <div class="more1">
+        <h3>Our Mission</h3><br>
+        <p>To offer best prices, easy&smooth shopping experience, fast delivery and different vairety of product at great value based on theri choice and preference for our customer.</p>
+</div>
+<div class="more2">
+    <h3>Contact us</h3><br>
+    <p>Tel/phone no:- 01-872323, 9877564523 E-mail:inkdragonsupprt@gmail.com </p>
+    </div>
+</div> <!-- Team section -->
+<section class="team">
+    <div class="heading2">
+        <h1>TEAM</h1>
+        <div class="Maincontainer">  <!-- Main container for team members -->
+        <div class="container"> <!-- Container for each team member -->
+           <a href="cv.html"> <!--Linking CV-->
+            <img src="../images/img1.jpg" alt="img1.jpg" class="team-img">
+            <h2>Kaustuv Duwadi</h2>
+            <h4>Team leader</h4>
+            <p>Mr.Duwadi is an amazing team leader with proper vision&goal, decision making, communication skill, and organizational skills. Leading the team towards the vision and goal of creating website throughout the task.</p></a>
+</div>
+<div class="container">
+  <a href="cv2.html"> <!--Linking CV-->
+    <img src="../images/img2.jpg"  alt="img2.jpg" class="team-img"> 
+    <h2>Sirson Sharma</h2>
+    <h4>Member</h4>
+    <p>Sirson is an skilled developer blessed with creativity to bring graphics to life through visually captivating design. Building the backbone and adding beauty on digital canvas.</p></a>
+</div>
+<div class="container">
+  <a href="cv3.html"> <!--Linking CV-->
+    <img src="../images/img3.jpg"  alt="img3.jpg" class="team-img">
+    <h2>Nischal Tharu</h2>
+    <h4>Member</h4>
+    <p>Nischal is an remarkable teammate and fellow developer with mastery over html & Css and expertise in the art of coding. Supporting with invaluable suggestions and assistance for entire team.</p></a>
+</div>
+<div class="container">
+  <a href="cv4.html"> <!--Linking CV-->
+    <img src="../images/img4.jpg" alt="img4.jpg" class="team-img">
+    <h2>Rajiv Khadgi</h2>
+    <h4>Member</h4>
+    <p a href="cv4.html">Rajiv is an fellow teammate transforming idea to digital innovation for gaining online presence and expanding the brand awareness.
+    </p>
+  </a>
+</div>
+</div>
+</div>
+</section>
+<footer> <!-- Footer section with columns for logo, partners, payments, and social links -->
+    <div class="row1">
+        <div class="col1">
+            <a href="home" class="logo">&#169;Ink Panda</a>
+
+        </div>
+        <div class="col1">
+            <h3>Partners 
+                <div class="underline"><span>
+                </span>
+                </div> 
+            </h3>
+            <p>Kaustuv Duwadi</p>
+            <p>Sirson Sharma </p>
+            <p>Rajiv Khadgi</p>
+            <p>Nischal Tharu</p>
+        </div>
+        <div class="col1">
+            <h3>Payments</h3>
+                <div class="underline">
+
+                </div>
+            </h3>
+                <li><a href=https://esewa.com.np>Esewa</a></li>
+                <li><a href=https://test-web.khalti.com>Khalti</a></li>
+                <li><a href=https://www.machbank.com>Mach bank </a></li>
+                <li><a href=https://www.imepay.com>Ime pay</a></li>
+
+        </div>
+        <div class="col1">
+            <h3>Connect to us </h3>
+                <div class="underline"><span></span></div>
+                <li><a href=https://www.linkedin.com/login>LinkedIn</a></li>
+                <li><a href=https://www.facebook.com>Facebook</li>
+                <li><a href=https://twitter.com/i/flow/login>X</li>
+                <li><a href=https://www.instagram.com/accounts/login>Instagram</li>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>

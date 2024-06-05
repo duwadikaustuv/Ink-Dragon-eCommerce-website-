@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet"href="../css/home.css"> <!-- Link to external stylesheet -->
+
+</head> <!-- Internal CSS styles -->
+<style> 
+  body{
+	background-color:#8AA1B1;
+  color: white;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+}
+
+ nav {
+  position:fixed;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100%;
+  height:65px;
+  line-height:70px;
+  padding:0px 100px;
+  position: fixed;
+  border-radius: 5px;
+  background-color:#000000;
+  margin-top: 0px;
+}
+
+nav .banner p{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  color:white;
+}
+nav li a{
+  margin-top: -90px;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+  padding:0px 25px;
+  color:white;
+  text-decoration:none;
+}
+  
+li a:hover {
+ text-shadow: 0px 0px 9px rgb(235, 230, 230);
+ transition: all 0.2s ease 0s;
+ }
+
+nav li{
+  display: inline-block;
+  padding:0px 30px;
+}
+
+#service {
+	padding-top: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+  }
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .column {
+	width: 100%;
+	text-align: center;
+  }
+  .card {
+	width: 100%;
+	height: 100%;
+	padding: 30px 15px;
+	background-size: 100% 110%;
+	background-position: 0 1%;
+	border-radius: 65px;
+	cursor: pointer;
+	transition: 0.5s;
+  }
+  .row .section-heading{
+	height: 10px;
+	width: 50px;
+	border-radius: 100px;
+	display: flex;
+	margin: 150px;
+  padding-left: 560px;
+
+
+}
+  h3 {
+	font-size: 40px;
+	font-family: serif;
+	font-weight: 600;
+	margin: 10px 0;
+  }
+
+
+  .row p{
+	font-size: 16px;
+	font-family:sans-serif;
+	line-height: 1.6;
+	margin-top: -2px;
+  }
+  img {
+	align-content: center;
+	position: relative;
+	display:flex;
+	margin: 15px;
+	border-radius: 40px;
+	justify-content: space-around;
+  }
+
+  .icon-wrapper{ 
+	position: relative;
+	padding-right: 320px;
+	margin: auto;
+	font-size: 30px;
+	height: 295px;
+	width: 300px;
+	border-radius: 40px;
+	color: #131111;
+	display: flex;
+	flex-direction: row;
+	place-items: center;
+  margin-top: 70px;
+  } 
+  .card {
+	background-position: 0 100%;
+  }
+.row .section-heading {
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+
+.row .section-heading{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+</style>
+<body> <!-- Header section containing navigation and buttons -->
+  <header> 
+    <nav>
+    <div class="banner"> <!-- Navigation bar -->
+       <p>  Ink Panda </p>
+    </div> 
+       <ul> <!-- Navigation links -->
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="About-us.html">About us</a></li>
+
+       </ul>
+    </nav>
+        <div class="contents">
+            <div> <!--creating buttons for login and Sign up-->
+              <button type="button"><a href="form.html">Sign-up</a></button>
+              <button type="button"><a href="form.html">Login</a></button>
+    </div>
+</header> <!-- Blog section with rows and columns -->
+      <div class="row">
+        <h1 class="section-heading">Blog</h1>
+      </div>
+        </div>
+        <div class="row">
+          <!-- Individual blog posts -->
+          <div class="column">
+            <div class="card">
+              <!-- Image, heading, and content for the blog post -->
+              <div class="icon-wrapper">
+                <img src="../images/p14.jpg" style="height:320px; width:500px" alt="">
+              </div>
+              <h3>About Technology </h3>
+              <p>
+                In today's fast-paced world, technology is the driving force behind 
+                innovation and progress. From smartphones to smart homes, the digital 
+                revolution has transformed the way we live and work. In this blog, we explore 
+                the positive and negative impacts of technology, with a spotlight on its influence
+                 on the printing business.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <img src="../images/p27.webp" style="height:295px; width: 350px" alt="">
+            </div>
+              <h3>Positive Impact</h3>
+              <p>
+                1. Efficiency and Productivity
+               Technology has revolutionized the way we work, 
+               enhancing efficiency and productivity. In the 
+               printing industry, advanced printers and automated 
+               processes have streamlined tasks, reducing manual effort 
+               and expediting production timelines.<br>2. Connectivity and Communication
+               The digital era has brought us closer than ever. Real-time communication tools 
+               enable seamless collaboration among individuals and teams, fostering innovation 
+               and creativity within the printing business. <br> 3. Innovation and Creativity
+               Technology has opened up new horizons for creativity. 3D printing, customizable 
+               designs, and high-resolution printing capabilities empower businesses to offer unique 
+               and personalized solutions, setting them apart in a competitive market.
+
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+         <img src="../images/p16.png" style="height:295px; width: 350px" alt="">
+              </div>
+              <h3>Negative Impact</h3>
+              <p>1. Environmental Concerns
+                The rapid pace of technological advancements often leads 
+                to increased electronic waste. The printing industry, in 
+                particular, faces challenges related to sustainable practices 
+                and the environmental impact of ink cartridges and paper consumption.
+                <br> 2. Job Displacement
+                Automation and artificial intelligence, while enhancing efficiency, can 
+                also lead to job displacement in certain sectors of the printing industry. 
+                Striking a balance between technological integration and preserving employment 
+                opportunities becomes crucial.
+                <br>3. Security Risks
+                As technology becomes more interconnected, concerns about cybersecurity rise. 
+                The printing industry, dealing with sensitive client information, must navigate 
+                potential security risks to safeguard data and maintain trust.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <img src="../images/p24.jpg" style="height:295px; width: 350px"  alt="">
+
+              </div>
+              <h3>Impact of Technology on Daily Life and Business/Printing Business</h3>
+              <p>
+                In the context of daily life, technology has made information accessible at our 
+                fingertips, transforming the way we learn, shop, and communicate. In the printing 
+                business, technology has empowered businesses to offer customized solutions, deliver 
+                high-quality prints, and stay competitive in a digital marketplace.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <img src="../images/p25.webp" style="height:295px; width: 295px"alt="" >
+              </div>
+              <h3>Overall Conclusion</h3>
+              <p>
+                As we navigate the intricate landscape of technological evolution, 
+                the balance between positive and negative impacts becomes crucial. Embracing 
+                the positive changes while proactively addressing the challenges is 
+                the key to a harmonious coexistence with technology.
+
+                In the printing industry, finding sustainable practices, embracing innovation 
+                responsibly, and prioritizing security are essential steps toward ensuring a 
+                positive impact on both businesses and consumers.
+
+              </p>
+            </div>
+          </div>
+        </div>
+</section>
+</body>
+</html>

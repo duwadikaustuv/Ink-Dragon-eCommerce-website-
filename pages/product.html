@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css"> <!-- Link to external stylesheet -->
+    <title>Product Page</title>
+</head>
+<!-- Internal CSS styles -->
+<style> 
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8AA1B1;
+    color: white;
+}
+h1 {
+        padding: 3%;
+        margin: 1%;
+        color: white;
+        box-shadow:1px 1px 8px white;
+        border-radius: 12px;
+        background-color: white;
+
+}
+.logo{
+    width: 6%;
+    }
+    nav {
+        position:fixed;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 100%;
+        height:65px;
+        line-height:70px;
+        padding:0px 100px;
+        position: fixed;
+        border-radius: 5px;
+        background-color:#000000;
+        margin-top: 0px;
+     }
+     
+     nav .banner p{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: bold;
+        color:white;
+     }
+     nav li a{
+        margin-top: -90px;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-transform: uppercase;
+        padding:0px 25px;
+        color:white;
+        text-decoration:none;
+     }
+        
+     li a:hover {
+       text-shadow: 0px 0px 9px rgb(235, 230, 230);
+       transition: all 0.2s ease 0s;
+       }
+     
+     nav li{
+        display: inline-block;
+        padding:0px 30px;
+    }
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    color: white
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 19px;
+    color: white;
+    margin-bottom: 15px;
+}
+.actual-price {
+    font-size: 19px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    color: white;
+    margin-bottom: 20px;
+}
+.addToCartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4A5043;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin: 1%;
+    padding: 60px 10px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    box-shadow:1px 1px 8px white;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin: 1%;
+    padding: 60px 10px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    box-shadow:1px 1px 8px white;
+}
+.footer-col ul{
+   text-decoration: none;
+   list-style-type: none;
+}
+.footer-col{
+    width: 25%;
+}
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color:white;
+   
+}
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    background-color: rgb(255, 255, 255);
+    height:2px;
+    width: 40px;
+    box-shadow:3px 3px 10px white;
+}
+</style>
+<body> <!-- Header section containing navigation and buttons -->
+    <header> 
+        <nav>
+        <div class="banner"> <!-- Navigation bar -->
+           <p>  Ink Panda </p>
+        </div>
+           <ul> <!-- Navigation links -->
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="About-us.html">About us</a></li>
+    
+           </ul>
+        </nav>
+            <div class="contents">
+                <div> <!--creating buttons for login and Sign up-->
+                  <button type="button"><a href="form.html">Sign-up</a></button>
+                  <button type="button"><a href="form.html">Login</a></button>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table> <!-- Product listing table -->
+    <tr>
+        <!-- Row 1 -->
+            <td class="product" id="p1"> 
+                <!-- Product details: image, title, price, etc. -->
+                <img src="../images/1.jpeg" alt="Canon inkjet printer" width="225" height="225">
+                <h2 class="product-title">Canon Pixma G3730</h2>
+                <p class="product-price">23,499</p>
+                <p class="actual-price"><small><del>25,000</del></small></p>
+                <p class="product-description">Quality printer from Canon</p>
+                <!-- Add to Cart button -->
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+            <td class="product" id="p2">
+                <img src="../images/2.jpeg" alt="Canon inkjet printer" width="225" height="225">
+                <h2 class="product-title">Canon Pixma TS207</h2>
+                <p class="product-price">5,298</p>
+                <p class="actual-price"><small><del>8,000</del></small></p>
+                <p class="product-description">Budget-friendly single function inkjet printer from Canon</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+            <td class="product" id="p3">
+                <img src="../images/3.jpeg" alt="Canon inkjet printer" width="225" height="225">
+                <h2 class="product-title">Canon Pixma E560</h2>
+                <p class="product-price">16,250</p>
+                <p class="actual-price"><small><del>19,500</del></small></p>
+                <p class="product-description">Auto-Duplex 3 in 1 wireless color printer from Canon</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td class="product" id="p4">
+                <img src="../images/4.jpeg" alt="Canon inkjet printer" width="225" height="225">
+                <h2 class="product-title">Canon Pixma E470</h2>
+                <p class="product-price">11,849</p>
+                <p class="actual-price"><small><del>15,000</del></small></p>
+                <p class="product-description">3 In 1 Wireless Multi-Function Inkjet Colour Printer from Canon</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+            <td class="product" id="p5">
+                <img src="../images/5.jpeg" alt="Canon inkjet printer" width="225" height="225">
+                <h2 class="product-title">Canon Pixma G1020</h2>
+                <p class="product-price">14,998</p>
+                <p class="actual-price"><small><del>18,000</del></small></p>
+                <p class="product-description">Single-Function Ink Tank Colour Printer from Canon</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+            <td class="product" id="p6">
+                <img src="../images/6.jpeg" alt="Epson dot-matrix printer" width="225" height="225">
+                <h2 class="product-title">Epson LQ 50 IMPACT PRINTER</h2>
+                <p class="product-price">29,970</p>
+                <p class="actual-price"><small><del>33,300</del></small></p>
+                <p class="product-description">High-quality space efficient dot-matrix printer from Epson</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+        </tr>
+        <!--Row 3-->
+        <tr>
+            <td class="product" id="p7">
+                <img src="../images/7.jpg" alt="MUNBYN thermal printer" width="225" height="225">
+                <h2 class="product-title">MUNBYN Thermal Label Printer ITPP941</h2>
+                <p class="product-price">30,320</p>
+                <p class="actual-price"><small><del> 41,849</del></small></p>
+                <p class="product-description">High printing speed thermal printer from MUNBYN</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+            <td class="product" id="p8">
+                <img src="../images/8.jpeg" alt="DYMO thermal printer" width="225" height="225">
+                <h2 class="product-title">DYMO LabelWriter 4XL</h2>
+                <p class="product-price">91,411</p>
+                <p class="actual-price"><small><del>1,00,000</del></small></p>
+                <p class="product-description">High-resolution, high speed, high quality thermal printer from DYMO</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+            <td class="product" id="p9">
+                <img src="../images/9.jpeg" alt="HP laser printer" width="225" height="225">
+                <h2 class="product-title">HP LaserJet 107a</h2>
+                <p class="product-price">14,999</p>
+                <p class="actual-price"><small><del>17,000</del></small></p>
+                <p class="product-description">Single Function Affordable Mono Printer - Upto 20 PPM - White from HP</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </tr>
+            <!--Row 4-->
+            <tr>
+            <td class="product" id="p10">
+                <img src="../images/10.jpeg" alt="Lenovo laser printer" width="225" height="225">
+                <h2 class="product-title">Lenovo M260DW</h2>
+                <p class="product-price">30,999</p>
+                <p class="actual-price"><small><del>35,000</del></small></p>
+                <p class="product-description">3-in-1 MonoChrome Laser Printer with Duplex & Wireless Network Printing from Lenovo</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+            <td class="product" id="p11">
+                <img src="../images/11.jpeg" alt="Brother dot-matrix printer" width="225" height="225">
+                <h2 class="product-title">Brother Printer DCP-L2540DW</h2>
+                <p class="product-price">34,990</p>
+                <p class="actual-price"><small><del>27,000</del></small></p>
+                <p class="product-description">Fast high quality printer with printing and scanning at up to 30 ppm from Brother</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+            <td class="product" id="p12">
+                <img src="../images/12.jpeg" alt="PANTUM laser printer" width="225" height="225">
+                <h2 class="product-title">PANTUM P2500W</h2>
+                <p class="product-price">22,998</p>
+                <p class="actual-price"><small><del>29,000</del></small></p>
+                <p class="product-description">Wireless Laser Printer for Office & Home Use Black and White Printer with Mobile Printing from Canon</p>
+                <a href="#" class="addToCartBtn" data-product-id="product">Add to Cart</a>
+            </td>
+        </tr>
+</div>
+    <!--JavaScript to display alert-->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Getting all elements with the class "addToCartBtn"
+            var addToCartButtons = document.querySelectorAll(".addToCartBtn");
+
+            // Adding click event listener to each button
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    alert("Added to cart successfully!");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
