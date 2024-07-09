@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home Page </title>
+    <link rel="stylesheet"href="css/home.css"> <!-- Link to external stylesheet -->
+    <script src="JavaScript/script.js"></script>
+
+</head>    
+    <body>
+    <header> <!-- Header section containing navigation and buttons -->
+    <nav> <!-- Navigation bar -->
+    <div class="banner">
+       <p>  Ink Dragon </p>
+    </div>
+       <ul>  <!-- Navigation links -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="pages/product.html">Product</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/research.html">Research</a></li>
+        <li><a href="pages/About-us.html">About us</a></li>
+
+       </ul>
+    </nav>
+        <div class="contents">
+            <div>  <!-- Buttons for Sign-up and Login -->
+              <button type="button"><a href="form.html">Sign-up</a></button>
+              <button type="button"><a href="form.html">Login</a></button>
+    </div>
+</header>
+<section  id="home">
+	<div class="home">
+		<div class="container">
+			</div>
+			<div class="content">
+				<div class="article"> <!-- Article heading and content -->
+					<h3>Unleash Your Ideas in Every Print!</h3><br>
+                    <p> Welcome to the vibrant world of Ink Panda, where your creativity knows no bounds! 
+                        Join us in the pursuit of print perfection. Unleash your ideas with Ink Panda and
+                         let every print tell the story of your boundless imagination!
+                    </p>
+				
+				</div>
+			</div>
+	</div>
+</section>  
+ <!-- Styling for the image slider -->
+<style type="text/css"> 
+    .slider 
+      {
+    size: 100px;
+      width: 39%;
+      height: 390px;
+      margin-bottom:0px;
+      margin-top: -300px;
+      margin-left: 20px;
+      border-radius: 70px;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 5px 5px 10px rgb(244, 220, 220);
+      float:left;
+      }
+
+    img 
+      {
+      width: 100%;
+      height: 0%;
+      }
+  </style>
+</head>
+
+<body>
+
+  <div class="slider">
+    <div id="img">
+      <img src="images/p27.webp">
+    </div>
+  </div>
+  <footer>   <!-- Footer section with columns for logo, partners, payments, and social links -->
+    <div class="row1">
+        <div class="col1">
+            <a href="home" class="logo">&#169;Ink Panda</a>
+
+        </div>
+        <div class="col1">
+            <h3>Partners 
+                <div class="underline"><span>
+                </span>
+                </div> 
+            </h3>
+            <p>Kaustuv Duwadi</p>
+            <p>Sirson Sharma </p>
+            <p>Rajiv Khadgi</p>
+            <p>Nischal Tharu</p>
+        </div>
+        <div class="col1">
+            <h3>Payments</h3>
+                <div class="underline">
+
+                </div>
+            </h3>
+                <li><a href=https://esewa.com.np>Esewa</a></li>
+                <li><a href=https://test-web.khalti.com>Khalti</a></li>
+                <li><a href=https://www.machbank.com>Mach bank </a></li>
+                <li><a href=https://www.imepay.com>Ime pay</a></li>
+
+        </div>
+        <div class="col1">
+            <h3>Connect to us </h3>
+                <div class="underline"><span></span></div>
+                <li><a href=https://www.linkedin.com/login>LinkedIn</a></li>
+                <li><a href=https://www.facebook.com>Facebook</li>
+                <li><a href=https://twitter.com/i/flow/login>X</li>
+                <li><a href=https://www.instagram.com/accounts/login>Instagram</li>
+
+        </div>
+    </div>
+</footer>
+<script>
+  var images = ['images/p28.webp', 'images/p16.png', 'images/p25.webp', 'images/p20.jpg', 'images/p26.jpg'];
+    var x = 0;
+    var imgs = document.getElementById('img');
+    setInterval(slider, 4000);
+
+    function slider() {
+
+      if (x < images.length) 
+        {
+        x = x + 1;
+        } 
+
+      else 
+        {
+        x = 1;
+        }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+</script>
+</body>
+</html>
